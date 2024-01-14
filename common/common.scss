@@ -1,13 +1,23 @@
 // custom search banner customizations
+
+
+// sean - showing categories again. 
+.navigation-categories .list-container .full-width #list-area .contents,
+ .categories-list .list-container .full-width #header-list-area .contents {
+  display: block;
+  visibility: visible;
+ }
+
+
 .custom-search-banner-wrap {
   margin: 0 auto !important;
   max-width: unset;
   color: var(--secondary);
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   p {
-    font-size: 1em !important;
+    font-size: .8em !important;
     font-weight: bold;
     margin-bottom: 1em;
   }
