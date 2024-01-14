@@ -5,7 +5,7 @@ let layoutsError;
 let layouts;
 
 try {
- // alert("Usefully, these functions are also available.");   // yes this works 
+  console.log("Usefully, functions within Widgets are also available.");   // yes this works 
 } catch(error) {
   console.error(error);
 }
