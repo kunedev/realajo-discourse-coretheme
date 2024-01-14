@@ -1,5 +1,7 @@
 <!-- Describe this theme/component in one or two sentences -->
 
+# MODIFIED FROM DISCOURSE "AIR" THEME
+
 A clean & modern theme with a handful of theme-components included to enhance your forum!
 
 <!-- Add screenshots (if applicable) -->
