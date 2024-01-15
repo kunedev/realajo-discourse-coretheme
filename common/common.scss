@@ -1,5 +1,7 @@
 
 
+
+// the next 3 lines are for showing "tooltips" 
 .tooltip {
   position: relative;
   display: inline-block;
@@ -27,10 +29,15 @@
   visibility: visible;
 }
 
+//custom styling to hide the standard Category boxes .. as they are now implemented by plugin
+.category-boxes {
+  display: none;
+}
 
-//style="display: none;"
+
+//style="display: none;"  .. enable this to have "nodisplay" class hide stuff. 
 .nodisplay {
- display: none !important;     // commented out just during dev
+ //display: none !important;     // commented out just during dev
 }
 
 // sean - showing categories again. 
