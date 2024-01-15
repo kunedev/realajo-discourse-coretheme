@@ -1,0 +1,9 @@
+
+{{#if isJson}}
+  {{textarea
+    value=(readonly fieldValue)
+    class="topic-custom-field-textarea"
+    change=(action "onChangeField" value="target.value")
+    placeholder=(i18n 'topic_custom_field.placeholder' field=fieldName)
+  }}
+{{/if}}

@@ -1,4 +1,42 @@
 
+// CUSTOM TOPIC FIELD 
+
+.topic-custom-field-input {
+  max-width: 100%;
+
+  &.small {
+    width: 150px;
+  }
+
+  &.large {
+    width: 475px;
+  }
+}
+
+.topic-custom-field-textarea {
+  max-width: 100%;
+  width: 465px;
+}
+
+
+
+// CUSTOM CATEGORY FIELD 
+.category-custom-field-input {
+  max-width: 100%;
+
+  &.small {
+    width: 150px;
+  }
+
+  &.large {
+    width: 475px;
+  }
+}
+
+.category-custom-field-textarea {
+  max-width: 100%;
+  width: 465px;
+}
 
 
 // the next 3 lines are for showing "tooltips" 
