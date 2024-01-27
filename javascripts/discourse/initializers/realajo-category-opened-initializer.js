@@ -14,12 +14,15 @@ export default {
           let categoryName = model.category.name;
 
           // Create a new event
-          let event = new CustomEvent("ToWrapper_categoryOpened", {
+          let event = new CustomEvent("RWrapperEvent", {
             detail: {
+              eventReason: "categoryOpened",
               categoryId: categoryId,
               categoryName: categoryName
             }
           });
+
+
 
           console.log("Category");
           console.log(model);

@@ -14,12 +14,14 @@ export default {
           let groupName = model.name;
 
           // Create a new event
-          let event = new CustomEvent("ToWrapper_groupOpened", {
+          let event = new CustomEvent("RWrapperEvent", {
             detail: {
+              eventReason: "groupOpened",
               groupId: groupId,
               groupName: groupName
             }
           });
+
 
           // Dispatch the event
           window.dispatchEvent(event);

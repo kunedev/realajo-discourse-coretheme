@@ -9,9 +9,12 @@ export default {
       api.onPageChange((url, title) => {
         
         // Create a new event
-        let event = new CustomEvent("ToWrapper_pageChange", {
-          detail: { url: url, title: title }
+        let event = new CustomEvent("RWrapperEvent", {
+          detail: { eventReason: "pageChange",
+             url: url, title: title }
         });
+
+
 
         // Dispatch the event
         window.dispatchEvent(event);
