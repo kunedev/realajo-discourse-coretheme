@@ -128,6 +128,9 @@
   position: fixed;
 }
 
+:root {
+  --topic-body-width: unset; //  unset the width of the topic body; was creating wrong width at some resolutions 
+}
  
 // =================================   FROM HERE DOWN IS THE ORIGINAL THEME  =================================  
 
