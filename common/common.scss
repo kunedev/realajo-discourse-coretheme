@@ -116,8 +116,9 @@
  border-left:  var(--q-primary) 0.5px solid;
 }
 
-#main-outlet-wrapper {    // not full height 
-  border-right:  var(--q-primary) 0.5px solid;
+#rightdrawermain {    // not full height 
+  border-left:  var(--q-primary) 0.5px solid;
+  border-top:  var(--q-primary) 0.5px solid;
 }
 
 
