@@ -14,7 +14,7 @@ export default {
           let groupName = model.name;
 
           // Create a new event
-          let event = new CustomEvent("groupOpened", {
+          let event = new CustomEvent("ToWrapper_groupOpened", {
             detail: {
               groupId: groupId,
               groupName: groupName

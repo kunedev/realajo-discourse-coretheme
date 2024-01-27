@@ -14,7 +14,7 @@ export default {
           let categoryName = model.category.name;
 
           // Create a new event
-          let event = new CustomEvent("categoryOpened", {
+          let event = new CustomEvent("ToWrapper_categoryOpened", {
             detail: {
               categoryId: categoryId,
               categoryName: categoryName

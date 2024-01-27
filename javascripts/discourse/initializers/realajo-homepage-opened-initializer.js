@@ -23,7 +23,7 @@ export default {
           let viewType = homepageUrls[url];
 
           // Create a new event
-          let event = new CustomEvent("homepageOpened", {
+          let event = new CustomEvent("ToWrapper_homepageOpened", {
             detail: {
               viewType: viewType
             }

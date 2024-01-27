@@ -9,7 +9,7 @@ export default {
       api.onPageChange((url, title) => {
         
         // Create a new event
-        let event = new CustomEvent("pageChange", {
+        let event = new CustomEvent("ToWrapper_pageChange", {
           detail: { url: url, title: title }
         });
 
