@@ -95,7 +95,26 @@
 
 // =================================   NEXT SECTION = CHANGING DISCOURSE LAYOUT TO ALLOW VUE & DISCOURSE TO COEXIST  =================================  
 
+// ===============  colours for the Vue header and sidebars    ===
 
+#qheader {
+ // background-color: #2d2d2d;
+}
+
+#qleftdrawer {
+  background-color: #aaa;
+}
+
+#qrightdrawer {
+  background-color: lightgray;
+}
+
+#main {
+ border-left:  darkblue 1px solid;
+ border-right: darkblue 1px solid;
+}
+
+// ========================
 
 .admin-main-nav  {
   height: unset !important;
@@ -107,11 +126,6 @@
 
 .topic-post.sticky-avatar .topic-avatar {   // when scrolling within a topic, prevent the avatar from laying over the text. 
   display: none !important;
-}
-
-#main {      // move the main content sideways allow for the Vue sidebar.   TODO:  make responsive and context-aware. 
- // left: 300px;
-  //width: calc(100% - 300px);
 }
 
 .q-drawer--right.q-drawer--bordered {   // remove fine white line; prevent movement to bottom
