@@ -132,6 +132,41 @@
   --topic-body-width: unset; //  unset the width of the topic body; was creating wrong width at some resolutions 
 }
  
+
+#main {
+  transition: left 0.3s, width 0.3s; /* Smooth transition for the layout change */
+}
+
+// ==============   Next: Dynamic resizing of the main content area based on the state of the qleftdrawer and qrightdrawer  ==============  
+
+// Note, under 1054 px, the Quasr framework presents the sidebars as Overlays - no need to resize the main content area.
+@media screen and (min-width: 1054px) {
+
+    .qleftdrawer-open.qrightdrawer-open #main {
+      /* Adjust these values based on the actual width of your qleftdrawer */
+      left: 300px; /* width of qleftdrawer */
+      width: calc(100% - 300px - 300px); /* full width minus both sidebars */
+    }
+
+    .qleftdrawer-open.qrightdrawer-closed #main {
+      /* Adjust these values based on the actual width of your qleftdrawer */
+      left: 300px; /* width of qleftdrawer */
+      width: calc(100% - 300px - 0px); /* full width minus both sidebars */
+    }
+
+    .qleftdrawer-closed.qrightdrawer-open #main {
+      /* Adjust these values based on the actual width of your qleftdrawer */
+      left: 0px; /* width of qleftdrawer */
+      width: calc(100% - 0px - 300px); /* full width minus both sidebars */
+    }
+
+    .qleftdrawer-closed.qrightdrawer-closed #main {
+      /* Adjust these values based on the actual width of your qleftdrawer */
+      left: 0px; /* width of qleftdrawer */
+      width: 100%; /* full width minus both sidebars */
+    }
+  }   // end of media query
+
 // =================================   FROM HERE DOWN IS THE ORIGINAL THEME  =================================  
 
 .custom-search-banner-wrap {
