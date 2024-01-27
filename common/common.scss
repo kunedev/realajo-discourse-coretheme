@@ -189,7 +189,7 @@
     }
   }   // end of media query
 
-  @media screen and (min-width: 1054px) { 
+  @media screen and (max-width: 1053px) {     // hide in Overlay mode
     #rightdrawertop {
       display: none !important;
     }
