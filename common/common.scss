@@ -114,6 +114,12 @@
   //width: calc(100% - 300px);
 }
 
+.q-drawer--right, .q-drawer--left {  // remove fine white line; prevent movement to bottom
+  border: 0px ;
+  position: fixed;
+}
+
+ 
 // =================================   FROM HERE DOWN IS THE ORIGINAL THEME  =================================  
 
 .custom-search-banner-wrap {
