@@ -105,6 +105,10 @@
   top: 50px !important;
 }
 
+.topic-post.sticky-avatar .topic-avatar {   // when scrolling within a topic, prevent the avatar from laying over the text. 
+  display: none !important;
+}
+
 
 // =================================   FROM HERE DOWN IS THE ORIGINAL THEME  =================================  
 
