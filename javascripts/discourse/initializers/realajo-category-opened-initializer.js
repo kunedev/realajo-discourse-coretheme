@@ -22,10 +22,7 @@ export default {
             }
           });
 
-
-
-          console.log("Category");
-          console.log(model);
+          console.log("Model available: " + model);
           
 
           // Dispatch the event

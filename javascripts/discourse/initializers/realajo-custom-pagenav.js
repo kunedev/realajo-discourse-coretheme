@@ -18,9 +18,7 @@ export default {
 
         // Dispatch the event
         window.dispatchEvent(event);
-
-        // Log the event
-        console.log("pageChange event dispatched");
+ 
 
 
       });

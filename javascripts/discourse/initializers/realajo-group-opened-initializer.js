@@ -26,9 +26,9 @@ export default {
           // Dispatch the event
           window.dispatchEvent(event);
 
-        // Log the event
-        console.log("groupOpened event " + groupName + " " + groupId + " dispatched");
-        console.log(model); 
+        // Log the event    #TODO - REMOVE CONSOLE LOGS
+        
+        console.log("Model available: " + model); 
         
 
 
