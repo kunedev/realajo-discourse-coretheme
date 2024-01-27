@@ -101,6 +101,9 @@
   height: unset !important;
 }
 
+.d-header-wrap {            // keep the Discourse standard header underneath the Vue header
+  top: 50px !important;
+}
 
 
 // =================================   FROM HERE DOWN IS THE ORIGINAL THEME  =================================  
