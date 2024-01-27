@@ -110,8 +110,8 @@
 }
 
 #main {
- border-left:  darkblue 1px solid;
- border-right: darkblue 1px solid;
+ border-left:  var(--q-primary) 0.5px solid;
+ border-right:  var(--q-primary) 0.5px solid;
 }
 
 // ========================
