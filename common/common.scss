@@ -109,6 +109,10 @@
   display: none !important;
 }
 
+#main {      // move the main content sideways allow for the Vue sidebar.   TODO:  make responsive and context-aware. 
+  left: 300px;
+  width: calc(100% - 300px);
+}
 
 // =================================   FROM HERE DOWN IS THE ORIGINAL THEME  =================================  
 
