@@ -112,10 +112,14 @@
   background-color: white;
 }
 
-#main {
+#main {     // full height
  border-left:  var(--q-primary) 0.5px solid;
- border-right:  var(--q-primary) 0.5px solid;
 }
+
+#main-outlet-wrapper {    // not full height 
+  border-right:  var(--q-primary) 0.5px solid;
+}
+
 
 // ========================
 
