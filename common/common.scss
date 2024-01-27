@@ -114,10 +114,17 @@
   //width: calc(100% - 300px);
 }
 
+.q-drawer--right.q-drawer--bordered {   // remove fine white line; prevent movement to bottom
+  border: none !important;
+}
+
+.q-drawer--left.q-drawer--bordered {   // remove fine white line; prevent movement to bottom
+  border: none !important;
+}
+
+
 .q-drawer--right, .q-drawer--left {  // remove fine white line; prevent movement to bottom
   
-  border-left: 0px;
-  border-right: 0px;
   position: fixed;
 }
 
