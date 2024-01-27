@@ -189,6 +189,13 @@
     }
   }   // end of media query
 
+  @media screen and (min-width: 1054px) { 
+    #rightdrawertop {
+      display: none !important;
+    }
+  }
+
+
 // =================================   FROM HERE DOWN IS THE ORIGINAL THEME  =================================  
 
 .custom-search-banner-wrap {
