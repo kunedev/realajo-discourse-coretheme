@@ -93,6 +93,21 @@
   }
 }
 
+
+.cooked{      // the area in which each Discourse post is displayed.
+  border: 0.5px;
+  border-color: lightgray;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.more-topics__container {   // the area in which the "more topics" are displayed. 
+  border: 0.5px;
+  border-color: lightgray;
+  border-style: solid;
+  border-radius: 10px;
+}
+
 // =================================   NEXT SECTION = CHANGING DISCOURSE LAYOUT TO ALLOW VUE & DISCOURSE TO COEXIST  =================================  
 
 
