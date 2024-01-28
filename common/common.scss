@@ -96,9 +96,34 @@
 // =================================   NEXT SECTION = CHANGING DISCOURSE LAYOUT TO ALLOW VUE & DISCOURSE TO COEXIST  =================================  
 
 
+// First I want to "unset" some of the settings within the #main section  (Discourse) that get set within the Vue3 css  (kuneui.css)
+
+#main *, #main *:before, #main *:after
+{
+  box-sizing: unset;   // may need to use !important
+  min-width: none;
+  min-height: none;
+}
+
+#main h3
+{
+  font-size: unset; 
+  font-weight: unset;
+  line-height: unset;
+}
+
+#main th, td {
+  border: unset;
+  padding: unset;
+  
+}
+
+
+
+
 //   =========  CSS from default Vue3 build: 
-//   This is the CSS defined in the default Vue3 app.   Currently included in Vue APP (rvueApp), but removed from rvueComm (and moved into here). 
-//            It may be what is breaking the layouts within Discourse .. great if yes. 
+//   This is the CSS defined in the default Vue3 app. 
+//   Here we've scoped it to be used only within the Vue3 app.
 
 .realajo html,
 .realajo body {
