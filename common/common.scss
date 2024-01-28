@@ -100,21 +100,21 @@
 //   This is the CSS defined in the default Vue3 app.   Currently included in Vue APP (rvueApp), but removed from rvueComm (and moved into here). 
 //            It may be what is breaking the layouts within Discourse .. great if yes. 
 
-html,
-body {
-  line-height: 1.6;
+.realajo html,
+.realajo body {
+    line-height: 1.6;
   font-size: 15px;
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
 
-main,
-nav {
+.realajo main,
+.realajo nav {
   margin: 1rem;
 }
 
-nav {
+.realajo nav {
   a {
     display: inline-block;
     border-left: 1px solid #ccc;
@@ -128,7 +128,7 @@ nav {
   }
 }
 
-a {
+.realajo a {
   text-decoration: none;
   color: dodgerblue;
 
@@ -146,14 +146,14 @@ a {
   }
 }
 
-h1,
-h2,
-h3 {
+.realajo h1,
+.realajo h2,
+.realajo h3 {
   margin: 0.75em 0;
   line-height: 1;
 }
 
-pre {
+.realajo pre {
   margin: 1rem;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
@@ -162,7 +162,7 @@ pre {
   overflow: auto;
 }
 
-#error {
+.realajo #error {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
