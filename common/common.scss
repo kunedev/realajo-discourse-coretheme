@@ -106,13 +106,6 @@
   line-height: unset;
 }
 
-#main th, #main td {
-  border: unset;
-  padding: unset;
-}
-
-
-
 
 //   =========  CSS from default Vue3 build: 
 //   This is the CSS defined in the default Vue3 app. 
@@ -194,9 +187,6 @@
 
 // ===============  colours for the Vue header and sidebars    ===
 
-#qheader {
- // background-color: #2d2d2d; 
-}
 
 #qleftdrawer {
   background-color:  rgb(228, 222, 222);
@@ -206,8 +196,8 @@
   background-color: rgb(228, 222, 222);
 }
 #rightdrawertop {
-  height: 56px
-  background-color: white;
+  height: 56px,
+  background-color white;
 }
 
 #main {     // full height
