@@ -224,7 +224,7 @@
   min-height: 0px !important;
 }
 
-#vuefooternav, #vuefooterbody {
+#vuefooternav {
   visibility: hidden;     // HIDDEN FOR NOW.  TODO: RE-SHOW THESE WHEN WE WANT TO USE VUE TO PRESENT INFO AT THE BOTTOM 
   display: none;
 }
