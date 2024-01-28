@@ -224,6 +224,11 @@
   min-height: 0px !important;
 }
 
+#vuefooternav, #vuefooterbody {
+  visibility: hidden;     // HIDDEN FOR NOW.  TODO: RE-SHOW THESE WHEN WE WANT TO USE VUE TO PRESENT INFO AT THE BOTTOM 
+  display: none;
+}
+
 // ===============  colours for the Vue header and sidebars    ===
 
 
