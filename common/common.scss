@@ -106,7 +106,8 @@
   line-height: unset;
 }
 
-#main th, td {
+#main th, #main td {
+  td {
   border: unset;
   padding: unset;
 }
