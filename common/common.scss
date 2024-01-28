@@ -108,6 +108,11 @@
   border-radius: 10px;
 }
 
+.topic-above-footer-buttons-outlet.presence {   // this was taking up unnecessary height - below post, above shares etc. 
+  min-height: 0px !important;
+ 
+}
+
 // =================================   NEXT SECTION = CHANGING DISCOURSE LAYOUT TO ALLOW VUE & DISCOURSE TO COEXIST  =================================  
 
 
