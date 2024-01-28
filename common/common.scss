@@ -98,12 +98,6 @@
 
 // First I want to "unset" some of the settings within the #main section  (Discourse) that get set within the Vue3 css  (kuneui.css)
 
-#main *, #main *:before, #main *:after
-{
-  box-sizing: unset;   // may need to use !important
-  min-width: none;
-  min-height: none;
-}
 
 #main h3
 {
@@ -115,7 +109,6 @@
 #main th, td {
   border: unset;
   padding: unset;
-  
 }
 
 
