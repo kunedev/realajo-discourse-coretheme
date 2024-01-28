@@ -106,6 +106,9 @@
   line-height: unset;
 }
 
+#main td, #main th {
+  border: 0px;
+}
 
 //   =========  CSS from default Vue3 build: 
 //   This is the CSS defined in the default Vue3 app. 
