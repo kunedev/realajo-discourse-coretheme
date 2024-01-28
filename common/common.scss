@@ -110,9 +110,16 @@
 
 .topic-above-footer-buttons-outlet.presence {   // this was taking up unnecessary height - below post, above shares etc. 
   min-height: 0px !important;
- 
 }
 
+#topic-footer-button-share-and-invite {   // highlight this button
+  border-color: green;
+  font-weight: bold;
+}
+
+#topic-footer-button-bookmark {   
+  border-color: green;
+}
 // =================================   NEXT SECTION = CHANGING DISCOURSE LAYOUT TO ALLOW VUE & DISCOURSE TO COEXIST  =================================  
 
 
