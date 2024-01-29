@@ -230,12 +230,12 @@
 }
 
 
-#platformlogin .dologin {     // Hacky code to emphasise Platform Login.  Todo: make Platform Login automatic. 
+#platformlogin.dologin {     // Hacky code to emphasise Platform Login.  Todo: make Platform Login automatic. 
   font-weight: bold;
   color: red;
 }
 
-#platformlogin .loggedin {     // Hacky code to remove Platform Login option once logged in.  See above. 
+#platformlogin.loggedin {     // Hacky code to remove Platform Login option once logged in.  See above. 
   display: none;
 }
 
