@@ -229,6 +229,18 @@
   display: none;
 }
 
+
+#platformlogin .dologin {     // Hacky code to emphasise Platform Login.  Todo: make Platform Login automatic. 
+  font-weight: bold;
+  color: red;
+}
+
+#platformlogin .loggedin {     // Hacky code to remove Platform Login option once logged in.  See above. 
+  display: none;
+}
+
+
+
 // ===============  colours for the Vue header and sidebars    ===
 
 
