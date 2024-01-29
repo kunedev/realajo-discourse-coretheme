@@ -13,7 +13,8 @@ export default {
 
         const currentUserName = currentUser ? currentUser.username : '';
         window.DiscourseUser = currentUserName;
-
+        
+        console.log("Current user: " + currentUserName);
     
         // Create a new event
         let event = new CustomEvent("RWrapperEvent", {
