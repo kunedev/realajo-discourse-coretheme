@@ -14,7 +14,7 @@ export default {
              url: url, title: title }
         });
 
-
+        console.log("RWrapperEvent: pageChange raised");
 
         // Dispatch the event
         window.dispatchEvent(event);
