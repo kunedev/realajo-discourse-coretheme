@@ -31,7 +31,7 @@ export default {
           });
 
 
-          console.log("Homepage.  Type: " + viewType);   // #TODO - REMOVE CONSOLE LOGS
+          console.log("Homepage.  Type: " + viewType); 
 
           // Dispatch the event
           window.dispatchEvent(event);
