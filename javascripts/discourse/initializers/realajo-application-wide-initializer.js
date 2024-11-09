@@ -92,6 +92,7 @@ export default {
               };
             }
           }
+
         } else {
           // For non-initial loads, dispatch event as normal
           let event = new CustomEvent("RWrapperEvent", {
