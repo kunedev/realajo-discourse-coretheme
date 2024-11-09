@@ -19,7 +19,10 @@ export default {
             "/": "home",
             "/latest": "latest",
             "/categories": "categories",
-            "/top": "top"
+            "/top": "top", 
+            "/admin": "admin",
+            "/review": "review",
+            "/u/": "u",
           };
 
           if (homepageUrls.hasOwnProperty(cleanUrl)) {
