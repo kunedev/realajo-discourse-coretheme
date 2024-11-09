@@ -1,3 +1,4 @@
+<!-- START OF HEAD_TAG section -->
 <script> 
     try {
      // console.log("I can run code from the HEAD_TAG common section");      // yes this works 
@@ -23,17 +24,6 @@
       href="https://cdn.jsdelivr.net/npm/cesium@1.113.0/Build/Cesium/Widgets/widgets.min.css"
       rel="stylesheet"
     />
-
-    <!--  NOTE, I HAVE COMMENTED OUT ALL THE GRAPH-RELATED LIBRARIES BELOW
-          Reason: The ADB2C SSO wasn't working in Discourse when these scripts were enabled. 
-          Specifically, an existing user could log in but a new user could not sign up .. they sign up in Azure but not Discourse.
-          I don't know which of these is the acutal culprit.
-
-          Consequence: any of the Cytoscape graphs won't work in Discourse Vue  (rvueComm) for now. 
-
-          TODO: To be resolved later. -->
-
-    <!-- graphs: cytoscape -->
 
     <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.28.1/dist/cytoscape.min.js"></script>  
 
@@ -80,3 +70,4 @@
 <!-- End of Realajo Vue3 Quasar app section -->
 
 
+<!-- END OF HEAD_TAG section -->
