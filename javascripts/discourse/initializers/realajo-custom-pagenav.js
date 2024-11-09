@@ -2,7 +2,7 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 
 
 export default {
-  name: "application-wide-initializer",
+  name: "application-wide-initializer_vOLD",
 
   initialize() {
     withPluginApi("0.8.14", (api) => {
