@@ -8,6 +8,9 @@ export default {
     withPluginApi("0.8.14", (api) => {
       api.onPageChange((url, title) => {
         
+
+/*    THIS IS THE OLD CODE
+
         // Access current user data
         const currentUser = api.getCurrentUser();
 
@@ -29,6 +32,9 @@ export default {
         // Dispatch the event
         window.dispatchEvent(event);
  
+
+*/
+
 
 
       });
