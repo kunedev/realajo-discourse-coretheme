@@ -14,8 +14,11 @@ export default {
           "/": "home",
           "/latest": "latest",
           "/categories": "categories",
-          "/top": "top"
-        };
+          "/top": "top", 
+          "/admin": "admin",
+          "/review": "review",
+          "/u/": "u",
+         };
 
         // Check if the URL matches any of the homepage URLs
         if (homepageUrls.hasOwnProperty(url)) {
