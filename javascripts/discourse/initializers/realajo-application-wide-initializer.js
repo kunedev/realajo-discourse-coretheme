@@ -57,20 +57,27 @@ export default {
               };
             }
           }
-          // Check for category page
-          else if (cleanUrl.match(/^\/c\//)) {
-            const container = api.container;
-            const categoryController = container.lookup('controller:discovery/category');
-            if (categoryController && categoryController.model) {
-              const category = categoryController.model.category;
-              window.InitialPageData.pageType = "category";
-              window.InitialPageData.data = {
-                eventReason: "categoryOpened",
-                categoryId: category.id,
-                categoryName: category.name
-              };
+            // Check for category page
+            else if (cleanUrl.match(/^\/c\//)) {
+                const container = api.container;
+                // Use the route instead of controller, matching your working code
+                const categoryRoute = container.lookup('route:discovery.category');
+                if (categoryRoute && categoryRoute.controller && categoryRoute.controller.model) {
+                const model = categoryRoute.controller.model;
+                if (model && model.category) {
+                    window.InitialPageData.pageType = "category";
+                    window.InitialPageData.data = {
+                    eventReason: "categoryOpened",
+                    categoryId: model.category.id,
+                    categoryName: model.category.name
+                    };
+                } else {
+                    console.warn('Category model or category data not available');
+                }
+                } else {
+                console.warn('Category route or controller not properly initialized');
+                }
             }
-          }
           // Check for group page
           else if (cleanUrl.match(/^\/g\//)) {
             const container = api.container;
