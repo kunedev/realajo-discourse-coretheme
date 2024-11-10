@@ -285,8 +285,11 @@
   margin-top: -20px !important;
 }
 
-.d-header .categories-wrapper { // dont show category in header view
-  display: none !important;
+.d-header .categories-wrapper { // shows when the topic is scrolled down 
+
+    margin-top: -18px;
+
+
 }
 
 .topic-avatar {
