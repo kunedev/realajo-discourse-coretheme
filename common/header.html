@@ -10,12 +10,19 @@
 
 $(document).ready(function () {     // raise custom event when sidebar is shown
 
+  console.log("document ready")
+
 if (document.getElementsByClassName("header-sidebar-toggle")) {
+    console.log("header-sidebar-toggle found")
     addToggleListener(document.getElementsByClassName("header-sidebar-toggle")[0])
+
 }
 
 function addToggleListener(toggleEl) {
     if (toggleEl) {
+        
+        console.log("toggleEl found .. about to add event listener")
+
         toggleEl.addEventListener("click", function () {
             // Wait a bit for the sidebar to load
             setTimeout(function() {
@@ -23,6 +30,7 @@ function addToggleListener(toggleEl) {
                 let sidebarIsVisible = document.getElementsByClassName("sidebar-section-header").length
 
                 if (sidebarIsVisible) {
+                    console.log("sidebarIsVisible is true, raising sidebarShown event")
                     raiseSidebarShownEvent()
                 }
             }, 100)
@@ -31,6 +39,9 @@ function addToggleListener(toggleEl) {
 }
 
 function raiseSidebarShownEvent() {
+
+    console.log("raising sidebarShown event")
+    
     let event = new CustomEvent("RWrapperEvent", {
         detail: { 
           eventReason: "sidebarShown",
