@@ -285,6 +285,10 @@
   margin-top: -20px !important;
 }
 
+.d-header .categories-wrapper { // dont show category in header view
+  display: none !important;
+}
+
 .topic-avatar {
   padding-top: 0px !important ;
   max-width: 32px !important;
