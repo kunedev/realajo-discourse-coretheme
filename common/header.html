@@ -7,53 +7,47 @@
 
 <script> 
 
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+    console.log("document ready");
 
-$(document).ready(function () {     // raise custom event when sidebar is shown
-
-  console.log("document ready")
-
-if (document.getElementsByClassName("header-sidebar-toggle")) {
-    console.log("header-sidebar-toggle found")
-    addToggleListener(document.getElementsByClassName("header-sidebar-toggle")[0])
-
-}
+    const toggleEl = document.querySelector(".header-sidebar-toggle");
+    if (toggleEl) {
+        console.log("header-sidebar-toggle found");
+        addToggleListener(toggleEl);
+    }
+});
 
 function addToggleListener(toggleEl) {
     if (toggleEl) {
-        
-        console.log("toggleEl found .. about to add event listener")
+        console.log("toggleEl found .. about to add event listener");
 
         toggleEl.addEventListener("click", function () {
             // Wait a bit for the sidebar to load
             setTimeout(function() {
-
-                let sidebarIsVisible = document.getElementsByClassName("sidebar-section-header").length
+                const sidebarIsVisible = document.getElementsByClassName("sidebar-section-header").length;
 
                 if (sidebarIsVisible) {
-                    console.log("sidebarIsVisible is true, raising sidebarShown event")
-                    raiseSidebarShownEvent()
+                    console.log("sidebarIsVisible is true, raising sidebarShown event");
+                    raiseSidebarShownEvent();
                 }
-            }, 100)
-        })
+            }, 100);
+        });
     }
 }
 
 function raiseSidebarShownEvent() {
-
-    console.log("raising sidebarShown event")
+    console.log("raising sidebarShown event");
     
-    let event = new CustomEvent("RWrapperEvent", {
+    const event = new CustomEvent("RWrapperEvent", {
         detail: { 
-          eventReason: "sidebarShown",
+            eventReason: "sidebarShown",
         }
-      });
-      window.dispatchEvent(event);
-      console.log("sidebarShown event raised")
+    });
+    window.dispatchEvent(event);
+    console.log("sidebarShown event raised");
 }
 
-})
-
-
- </script>
+</script>
 
 <!-- END OF HEADER section -->
