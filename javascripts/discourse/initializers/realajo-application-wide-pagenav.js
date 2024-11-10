@@ -22,6 +22,9 @@ export default {
             "/top": "top", 
             "/admin": "admin",
             "/review": "review",
+            "/about": "about",
+            "/faq": "faq",
+            "/badges": "badges",
             "/u/": "u",
           };
 
