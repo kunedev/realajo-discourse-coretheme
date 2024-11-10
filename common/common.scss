@@ -277,9 +277,16 @@
   top: 50px !important;
 }
 
-//.topic-post.sticky-avatar .topic-avatar {   // when scrolling within a topic, prevent the avatar from laying over the text. 
-//  display: none !important;
-//}
+.topic-avatar {
+  padding-top: 0px !important ;
+  width: 30px !important ;
+  max-width: 30px !important;
+  max-height: 30px !important;
+}
+
+.topic-post.sticky-avatar .topic-avatar {   // when scrolling within a topic, prevent the avatar from laying over the text. 
+  margin-left: -35px !important;
+}
 
 .q-drawer--right.q-drawer--bordered {   // remove fine white line; prevent movement to bottom
   border: none !important;
