@@ -281,10 +281,11 @@
   padding-top: 0px !important ;
   max-width: 30px !important;
   max-height: 30px !important;
+  margin-left: -15px !important;
 }
 
 .topic-post.sticky-avatar .topic-avatar {   // when scrolling within a topic, prevent the avatar from laying over the text. 
-  margin-left: -35px !important;
+  margin-left: -15px !important;
 }
 
 .q-drawer--right.q-drawer--bordered {   // remove fine white line; prevent movement to bottom
