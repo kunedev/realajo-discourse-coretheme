@@ -9,7 +9,7 @@
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
-    console.log("document ready");
+   // console.log("document ready");
 
     const toggleEl = document.querySelector(".header-sidebar-toggle");
     if (toggleEl) {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function addToggleListener(toggleEl) {
     if (toggleEl) {
-        console.log("toggleEl found .. about to add event listener");
+    //    console.log("toggleEl found .. about to add event listener");
 
         toggleEl.addEventListener("click", function () {
             // Wait a bit for the sidebar to load
@@ -28,7 +28,7 @@ function addToggleListener(toggleEl) {
                 const sidebarIsVisible = document.getElementsByClassName("sidebar-section-header").length;
 
                 if (sidebarIsVisible) {
-                    console.log("sidebarIsVisible is true, raising sidebarShown event");
+                    // console.log("sidebarIsVisible is true, raising sidebarShown event");
                     raiseSidebarShownEvent();
                 }
             }, 100);
@@ -37,7 +37,7 @@ function addToggleListener(toggleEl) {
 }
 
 function raiseSidebarShownEvent() {
-    console.log("raising sidebarShown event");
+   // console.log("raising sidebarShown event");
     
     const event = new CustomEvent("RWrapperEvent", {
         detail: { 
