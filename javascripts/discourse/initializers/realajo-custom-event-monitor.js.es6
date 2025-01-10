@@ -9,9 +9,8 @@ function RaiseRealajoEvent(targetDiv, type) {
   let id = targetDiv.getAttribute('data-id');        // the id of the category, topic, etc
   let name = targetDiv.getAttribute('data-name');     // the name of the category, topic, etc 
   let useContext = targetDiv.getAttribute('data-useContext');    // eg:  category-title-before   (or whatever outlet name we are using )
+  let pageContext = targetDiv.getAttribute('data-pageContext');
 
-  let appContext = "";      // we probably create and maintain a global variable (window.appContext) .. may not even need to pass this in the call 
-  
  // console.log(`Event: ${type}, AppContext: ${appContext}, UseContext: ${useContext}, ID: ${id}, Name: ${name}`);
 
 
@@ -19,8 +18,8 @@ function RaiseRealajoEvent(targetDiv, type) {
     detail: { 
       eventReason: "detailEvent",
       eventType: type,
-      appContext: appContext,
       useContext: useContext,
+      pageContext: pageContext,
       detailId: id,
       detailName: name
     }
@@ -44,6 +43,7 @@ function handleMouseOver(event) {
         isMouseOver = true;
         let id = target.getAttribute('data-id');
         let name = target.getAttribute('data-name');
+        
         RaiseRealajoEvent(target, 'mouseover');
       }
       break;
