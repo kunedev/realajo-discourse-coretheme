@@ -21,8 +21,8 @@ function RaiseRealajoEvent(targetDiv, type) {
       eventType: type,
       appContext: appContext,
       useContext: useContext,
-      id: id,
-      name: name
+      detailId: id,
+      detailName: name
     }
   });
   window.dispatchEvent(event);
