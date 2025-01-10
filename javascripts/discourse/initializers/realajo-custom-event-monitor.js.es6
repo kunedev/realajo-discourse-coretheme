@@ -15,7 +15,18 @@ function RaiseRealajoEvent(targetDiv, type) {
   console.log(`Event: ${type}, AppContext: ${appContext}, UseContext: ${useContext}, ID: ${id}, Name: ${name}`);
   // Implement the rest of the function here
 
-
+  let event = new CustomEvent("RWrapperEvent", {
+    detail: { 
+      eventReason: "detailEvent",
+      eventType: type,
+      appContext: appContext,
+      useContext: useContext,
+      id: id,
+      name: name
+    }
+  });
+  window.dispatchEvent(event);
+  
   
 }
 
