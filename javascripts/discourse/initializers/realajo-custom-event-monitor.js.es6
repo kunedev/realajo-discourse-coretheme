@@ -10,10 +10,10 @@ function RaiseRealajoEvent(targetDiv, type) {
   let name = targetDiv.getAttribute('data-name');     // the name of the category, topic, etc 
   let useContext = targetDiv.getAttribute('data-useContext');    // eg:  category-title-before   (or whatever outlet name we are using )
 
-  let appContext = "get-from-window.appContext";      // we probably create and maintain a global variable (window.appContext) .. may not even need to pass this in the call 
+  let appContext = "";      // we probably create and maintain a global variable (window.appContext) .. may not even need to pass this in the call 
   
-  console.log(`Event: ${type}, AppContext: ${appContext}, UseContext: ${useContext}, ID: ${id}, Name: ${name}`);
-  // Implement the rest of the function here
+ // console.log(`Event: ${type}, AppContext: ${appContext}, UseContext: ${useContext}, ID: ${id}, Name: ${name}`);
+
 
   let event = new CustomEvent("RWrapperEvent", {
     detail: { 
