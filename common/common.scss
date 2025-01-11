@@ -78,11 +78,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0099d1;   // kune blue
 }
 
 #rdiv-before-create-topic-button-icon {
-  width: 22px;
-  height: 22px;
+  width: 33px;
   color: #0099d1;   // kune blue
 }
 
@@ -139,14 +141,23 @@
   color: blueviolet;
 }
 
-// TOPIC PAGE DISPLAY ELEMENTS 
-
-#rdiv-after-topic-footer-buttons-icon {
+#rdiv-before-create-topic-button-thebutton {
   border-style: solid;
   border-width: 1px;
   border-color: #0099d1;   // kune blue
 }
 
+
+// TOPIC PAGE DISPLAY ELEMENTS 
+
+
+#rdiv-after-topic-footer-buttons {
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  border-color: lightblue;
+}
 
 // STYLING FOR CATEGORY LISTING / CUSTOM CATEGORY EXPLORER ICON
 #header-list-area #rdiv-category-title-before-icon {
