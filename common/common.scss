@@ -74,10 +74,7 @@
 // STYLING FOR CUSTOM INTERACTION BUTTONS 
 
 #rdiv-before-create-topic-button {
-  width: 22px;
-  height: 15px;
-  margin-left: 6px;
-  margin-right: 16px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,10 +87,12 @@
 }
 
 #rdiv-bread-crumbs-left {
-  margin-right: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 22px;
+  height: 15px;
+  margin-left: 6px;
+  margin-right: 10px;
+  margin-top: 16px;
 }
 
 #rdiv-bread-crumbs-left-icon {
