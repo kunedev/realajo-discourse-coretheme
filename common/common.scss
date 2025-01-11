@@ -71,6 +71,40 @@
   display: none;
 }
 
+// STYLING FOR CUSTOM INTERACTION BUTTONS 
+
+#rdiv-before-create-topic-button {
+  width: 22px;
+  height: 15px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rdiv-before-create-topic-button-icon {
+  width: 22px;
+  height: 22px;
+  color: blueviolet;
+}
+
+#rdiv-bread-crumbs-left {
+  width: 22px;
+  height: 15px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rdiv-bread-crumbs-left-icon {
+  width: 22px;
+  height: 22px;
+  color: blueviolet;
+}
+
+
+
 // STYLING FOR CATEGORY LISTING / CUSTOM CATEGORY EXPLORER ICON
 #header-list-area #rdiv-category-title-before-icon {
   margin-left: -22px !important;
@@ -90,6 +124,7 @@
 #rdiv-category-title-before-icon {
   margin-left: -30px;
   margin-top: 20px;
+  color: blueviolet;
 }
 
 .category-box-heading {
