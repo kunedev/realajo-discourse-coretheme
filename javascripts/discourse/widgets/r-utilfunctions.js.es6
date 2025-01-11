@@ -5,9 +5,9 @@ let layoutsError;
 let layouts;
 
 try {
-  console.log("Usefully, functions within Widgets are also available.");   // yes this works 
+ // console.log("Usefully, functions within Widgets are also available.");   // yes this works 
 } catch(error) {
-  console.error(error);
+  //console.error(error);
 }
 
 let x = myFunction(4, 3);   // Function is called, return value will end up in x

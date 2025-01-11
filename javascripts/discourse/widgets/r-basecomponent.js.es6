@@ -6,12 +6,12 @@ let layouts;
 
 try {
   
-  console.log("Evidently, I can run any JS I need here.  This is neat .. I can include JS code directly in the base component.");      // yes this works 
+ // console.log("Evidently, I can run any JS I need here.  This is neat .. I can include JS code directly in the base component.");      // yes this works 
   
  
 } catch(error) {
 
-  console.error(error);
+ // console.error(error);
 
 }
  
