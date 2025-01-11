@@ -83,6 +83,10 @@
 #rdiv-before-create-topic-button-icon {
   width: 22px;
   height: 22px;
+  color: #0099d1;   // kune blue
+}
+
+#rdiv-before-create-topic-button-icon:hover {
   color: blueviolet;
 }
 
@@ -98,10 +102,12 @@
 #rdiv-bread-crumbs-left-icon {
   width: 22px;
   height: 22px;
-  color: blueviolet;
+  color: #0099d1;   // kune blue
 }
 
-
+#rdiv-bread-crumbs-left-icon:hover {
+  color: blueviolet;
+}
 
 // STYLING FOR CATEGORY LISTING / CUSTOM CATEGORY EXPLORER ICON
 #header-list-area #rdiv-category-title-before-icon {
