@@ -109,10 +109,15 @@
   color: blueviolet;
 }
 
+
 // STYLING FOR CATEGORY LISTING / CUSTOM CATEGORY EXPLORER ICON
 #header-list-area #rdiv-category-title-before-icon {
-  margin-left: -22px !important;
+  margin-left: -25px !important;
 
+}
+
+.category-box-heading .parent-box-link h3 {
+  margin-left: 15px;
 }
 
 .category-box-inner .category-details .description {
