@@ -383,7 +383,8 @@ html body #main-outlet {
 }
 
 #rdiv-above-main-container {
-  color:green !important;
+  min-height: 70px !important;
+
 }
 
 // ===============  vue bottom-of-page 
