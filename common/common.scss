@@ -73,16 +73,29 @@
 
 
 // OVERALL PAGE LAYOUT 
+.cc-window{
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  display: none;
+}
+
 
 .d-header-wrap {
   top: 5px !important;
 }
 
 #main-outlet-wrapper .sidebar-wrapper{
-  top: calc(var(--header-offset) - 20px);
-  height: calc(100vh - (var(--header-offset) + 30px));
+  top: calc(var(--header-offset) + 25px) !important;
+  height: calc(100vh -(var(--header-offset) + 30px)) !important;
+  margin-bottom: 5px !important;
 }
+
+
 // STYLING FOR CUSTOM INTERACTION BUTTONS 
+html body #main-outlet {
+  margin-top: 2%;
+}
 
 #rdiv-before-create-topic-button {
 
