@@ -71,6 +71,25 @@
   display: none;
 }
 
+
+// OVERALL PAGE LAYOUT 
+
+.cc-window{
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  display: none;  // for now 
+}
+
+.d-header-wrap {
+  top: 5px !important;
+}
+
+#main-outlet-wrapper .sidebar-wrapper{
+  top: calc(var(--header-offset) - 20px);
+  height: calc(100vh -(var(--header-offset) + 30px));
+}
+
 // STYLING FOR CUSTOM INTERACTION BUTTONS 
 
 #rdiv-before-create-topic-button {
@@ -421,10 +440,6 @@
   height: unset !important;
 }
 
-.d-header-wrap {            // keep the Discourse standard header underneath the Vue header
-  top: 50px !important;
-}
-
 #topic-title {
   margin-bottom: 0px !important;
 }
@@ -454,9 +469,6 @@
 }
 
 
-.topic-post.sticky-avatar .topic-avatar {   // when scrolling within a topic, prevent the avatar from laying over the text. 
-  //margin-left: -15px !important;
-}
 
 .q-drawer--right.q-drawer--bordered {   // remove fine white line; prevent movement to bottom
   border: none !important;
