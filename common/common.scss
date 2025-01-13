@@ -801,8 +801,8 @@ html {
 
 html body #main-outlet {
   margin-top: 30px;
-  margin-bottom: 50px;
-  background: var(--secondary);
+  margin-bottom: 20px;
+  background: var(--secondary) !important;
   border-radius: 1em;
   padding: 3em 3em 5%;
   max-width: 1150px;
@@ -812,15 +812,11 @@ html body #main-outlet {
   @media screen and (max-width: 700px) {
     padding: 1.5em;
     margin-top: 0;
+    background: var(--secondary) !important;
   }
   padding-bottom: 5% !important; //overriding inline style
   @include box-shadow;
-  @media screen and (max-width: 1120px) {
-   // width: 80%;   // removed - Sean 
-  }
-  @media screen and (max-width: 1075px) {
-   // width: 85%;  // removed - Sean 
-  }
+
 }
 
 .nav-pills:not(.user-nav) > li a.active,
