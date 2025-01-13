@@ -82,7 +82,8 @@
 
 
 .d-header-wrap {
-  top: 5px !important;
+  background: linear-gradient(90deg, var(--tertiary-hover) 0%, var(--tertiary) 100%);
+  padding: 3px;
 }
 
 #main-outlet-wrapper .sidebar-wrapper{
@@ -396,17 +397,6 @@ html body #main-outlet {
   visibility: hidden;     // HIDDEN FOR NOW.  TODO: RE-SHOW THESE WHEN WE WANT TO USE VUE TO PRESENT INFO AT THE BOTTOM 
   display: none;
 }
-
-
-#platformlogin.dologin {     // Hacky code to emphasise Platform Login.  Todo: make Platform Login automatic. 
-  font-weight: bold;
-  color: red;
-}
-
-#platformlogin.loggedin {     // Hacky code to remove Platform Login option once logged in.  See above. 
-  display: none;
-}
-
 
 
 // ===============  colours for the Vue header and sidebars    ===
