@@ -574,6 +574,10 @@ html body #main-outlet {
   }
 }
 
+#main-outlet-wrapper #main-outlet {
+ width: 100% !important;
+}
+
 .search-input {
   border-radius: 0.25em;
 }
