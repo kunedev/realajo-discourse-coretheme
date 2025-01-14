@@ -154,17 +154,30 @@ html body #main-outlet {
 }
 
 #rdiv-topic-category-icon {
-  width: 12px;
+  
+  height: 12px;
+  color: #3877e5;   // kune blue
+  display: flex;
+  margin-right: 15px;
+
+} 
+
+#rdiv-topic-category-icon:hover {
+  color: blueviolet;
+}
+
+#rdiv-topic-category-topic-icon {
+  
   height: 12px;
   color: #3877e5;   // kune blue
   display: flex;
 
 } 
 
-
-#rdiv-topic-category-icon:hover {
+#rdiv-topic-category-topic-icon:hover {
   color: blueviolet;
 }
+
 
 #rdiv-topic-navigation {
   display: flex;
