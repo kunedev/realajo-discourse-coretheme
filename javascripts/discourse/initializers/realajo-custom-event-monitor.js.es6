@@ -44,7 +44,7 @@ function handleMouseOver(event) {
         let id = target.getAttribute('data-id');
         let name = target.getAttribute('data-name');
         
-        RaiseRealajoEvent(target, 'mouseover');
+  //      RaiseRealajoEvent(target, 'mouseover'); // not going to raise mouseover events for now. 
       }
       break;
     }

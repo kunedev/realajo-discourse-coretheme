@@ -95,6 +95,12 @@
   padding-top: 2em !important;
 }
 
+// remove the border from the topic avatar in Topic 
+.topic-avatar {
+  border-top: 0px !important;
+  border-top-style: none !important;
+}
+
 // STYLING FOR CUSTOM INTERACTION BUTTONS 
 html body #main-outlet {
   margin-top: 2%;
