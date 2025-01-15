@@ -866,6 +866,13 @@ html body #main-outlet {
 
 // Topic List
 
+.topic-list-item :hover {
+  border: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
 @keyframes background-fade-highlight {
   0% {
     background-color: var(--highlight-low);
