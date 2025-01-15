@@ -7,6 +7,9 @@ body.has-sidebar-page #main-outlet-wrapper {
   grid-template-columns: 100px minmax(0, 1fr) !important;
 }
 
+#main-outlet-wrapper {
+  max-width: 1200px !important;
+}
 
 .profiler-results {
   visibility: hidden !important;
