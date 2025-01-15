@@ -1,4 +1,17 @@
 
+
+// MAJOR UI RESTRUCTURE 
+
+.header-sidebar-toggle, .home-logo-wrapper-outlet {
+  display: none !important;
+}
+
+#rdiv-after-header-panel {
+  margin-left: -200px !important;
+}
+
+
+
 // CUSTOM TOPIC FIELD 
 
 .topic-custom-field-input {
