@@ -843,14 +843,24 @@ html {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(
-      90deg,
-      #3877e5 0%,
-      var(--tertiary) 100%
-    );
-    clip-path: ellipse(148% 70% at 91% -14%);
+    
+//    background: linear-gradient(    // THIS IS THE ORIGINAL BACKGROUND
+//      90deg,
+//      #3877e5 0%,
+//      var(--tertiary) 100%
+//    );
+// clip-path: ellipse(148% 70% at 91% -14%);
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("https://empowercdn.com/cdn/images/countries/br/br03.jpg"); 
+  background-size: cover !important; 
+  background-attachment: fixed;
+
   }
 }
+
+
+
+
 
 html body #main-outlet {
   margin-top: 30px;
