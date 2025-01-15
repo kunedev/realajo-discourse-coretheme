@@ -2,9 +2,18 @@
 
 // MAJOR UI RESTRUCTURE 
 
-.header-sidebar-toggle, .home-logo-wrapper-outlet {
+.header-sidebar-toggle {
   display: none !important;
 }
+
+.wrap{
+  max-width: unset !important;
+}
+
+.home-logo-wrapper-outlet {
+  position: absolute;
+  left: 20px !important;
+} 
 
 #rdiv-after-header-panel {
   margin-left: -200px !important;
