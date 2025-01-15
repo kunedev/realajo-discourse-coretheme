@@ -6,17 +6,16 @@
   display: none !important;
 }
 
-.wrap{
-  max-width: unset !important;
+.sidebar-wrapper{     // hide the Discourse sidebar, always
+  display: none !important;
 }
 
-.home-logo-wrapper-outlet {
-  position: absolute;
-  left: 20px !important;
-} 
+header.d-header .wrap {   
+  max-width: unset !important;  // let the header take up the full width of the screen
+}
 
 #rdiv-after-header-panel {
-  margin-left: -200px !important;
+  margin-left: -300px !important;
 }
 
 
