@@ -2,6 +2,12 @@
 
 // MAJOR UI RESTRUCTURE 
 
+body.has-sidebar-page #main-outlet-wrapper {
+  //grid-template-columns: var(--d-sidebar-width) minmax(0, 1fr) !important;
+  grid-template-columns: 100px minmax(0, 1fr) !important;
+}
+
+
 .profiler-results {
   visibility: hidden !important;
 }
