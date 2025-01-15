@@ -23,7 +23,7 @@ header.d-header .wrap {
 }
 
 #rdiv-after-header-panel {
-  margin-left: -300px !important;
+  margin-left: -420px !important;
 }
 
 
@@ -761,6 +761,18 @@ div.ac-wrap {
 }
 .d-header {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.d-header-icons {
+    border-radius: 5px;
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.d-header-icons .icon img.avatar {
+  width: 2em;
+  height: 2em;
 }
 
 .d-header-icons .d-icon {
