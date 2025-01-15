@@ -2,6 +2,14 @@
 
 // MAJOR UI RESTRUCTURE 
 
+.profiler-results {
+  visibility: hidden !important;
+}
+
+.d-header .panel {
+  margin-right: 40px !important;
+}
+
 .header-sidebar-toggle {
   display: none !important;
 }
@@ -526,7 +534,6 @@ html body #main-outlet {
 
 
 .q-drawer--right, .q-drawer--left {  // remove fine white line; prevent movement to bottom
-  
   position: fixed;
 }
 
