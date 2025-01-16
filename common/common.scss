@@ -22,7 +22,7 @@ body.has-sidebar-page #main-outlet-wrapper {
 }
 
 #rdiv-after-header-panel {
-  margin-left: -480px !important;
+  margin-left: -470px !important;
 }
 
 .chat-header-icon {
@@ -775,6 +775,7 @@ div.ac-wrap {
     box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
     max-height: 38px;
     border-radius: 5px;
+    margin: 0px !important;
 }
 
 .d-header-icons .icon img.avatar {
@@ -788,7 +789,7 @@ div.ac-wrap {
 
 .d-header-icons .icon {
   border-radius: 0.25em;
-  margin-left: 0.3em;
+  
   border: 1px solid transparent;
   svg {
     font-size: 1.25em;
