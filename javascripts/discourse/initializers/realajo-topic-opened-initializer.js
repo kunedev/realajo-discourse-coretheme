@@ -12,8 +12,8 @@ export default {
           // Get the topic and category information
           let topicId = model.id;
           let topicTitle = model.title;
-          let categoryId = model.category.id;
-          let categoryName = model.category.name;
+          let categoryId = model.category.id || 0;
+          let categoryName = model.category.name || "";
 
           // Create a new event
           let event = new CustomEvent("RWrapperEvent", {
