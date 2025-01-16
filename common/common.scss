@@ -2,6 +2,10 @@
 
 // MAJOR UI RESTRUCTURE 
 
+.d-header-mode .bootstrap-mode {
+display: none !important;
+}
+
 .menu-panel .drop-down { 
   z-index: 1000;
 }
