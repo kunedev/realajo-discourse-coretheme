@@ -2,6 +2,7 @@
 
 // MAJOR UI RESTRUCTURE 
 
+
 .d-header-mode .bootstrap-mode {
 display: none !important;
 }
@@ -12,7 +13,7 @@ display: none !important;
 
 .q-drawer-container {
   position: relative;
-  z-index: 1;
+  z-index: 200;
 }
 
 body.has-sidebar-page #main-outlet-wrapper {
@@ -154,11 +155,6 @@ header.d-header .wrap {
   padding-top: 2em !important;
 }
 
-// remove the border from the topic avatar in Topic 
-.topic-avatar {
-  border-top: 0px !important;
-  border-top-style: none !important;
-}
 
 // STYLING FOR CUSTOM INTERACTION BUTTONS 
 html body #main-outlet {
@@ -524,6 +520,9 @@ html body #main-outlet {
 }
 
 .topic-avatar {
+  border-top: 0px !important;
+  border-top-style: none !important;
+  z-index: unset !important;
   padding-top: 0px !important ;
   max-width: 32px !important;
   max-height: 32px !important;
