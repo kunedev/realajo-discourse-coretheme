@@ -13,7 +13,7 @@
 
 body.has-sidebar-page #main-outlet-wrapper {
   //grid-template-columns: var(--d-sidebar-width) minmax(0, 1fr) !important;
-  grid-template-columns: 200px minmax(0, 1fr) !important;
+  grid-template-columns: 230px minmax(0, 1fr) !important;
 }
 
 
@@ -46,9 +46,6 @@ body.has-sidebar-page #main-outlet-wrapper {
   display: none !important;
 }
 
-.sidebar-wrapper{     // hide the Discourse sidebar, always
-  display: none !important;
-}
 
 header.d-header .wrap {   
   max-width: unset !important;  // let the header take up the full width of the screen
