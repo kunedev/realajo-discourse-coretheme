@@ -2,6 +2,15 @@
 
 // MAJOR UI RESTRUCTURE 
 
+.menu-panel .drop-down { 
+  z-index: 1000;
+}
+
+.q-drawer-container {
+  position: relative;
+  z-index: 1;
+}
+
 body.has-sidebar-page #main-outlet-wrapper {
   //grid-template-columns: var(--d-sidebar-width) minmax(0, 1fr) !important;
   grid-template-columns: 200px minmax(0, 1fr) !important;
