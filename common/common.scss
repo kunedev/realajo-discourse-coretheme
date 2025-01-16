@@ -20,7 +20,9 @@ body.has-sidebar-page #main-outlet-wrapper {
   //grid-template-columns: var(--d-sidebar-width) minmax(0, 1fr) !important;
   grid-template-columns: 230px minmax(0, 1fr) !important;
 }
-
+.d-header .login-button {
+  margin-right: 7px !important;
+}
 
 .sign-up-button {   // we only need the Login button.  Maybe rename to signup/login
   display: none !important;
