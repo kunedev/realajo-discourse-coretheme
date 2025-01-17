@@ -19,6 +19,9 @@
   height: 28px;
 }
 
+.d-button-label {
+  font-size: var(--font-down-2-rem) !important;
+}
 
 // reduce category and tag sizes 
 .select-kit.combo-box.category-drop .badge-category__wrapper{
