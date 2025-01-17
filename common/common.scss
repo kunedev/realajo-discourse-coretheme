@@ -1,5 +1,92 @@
 
 
+
+@media (max-width: 768px) { // mobile responsive .. hopefully overriding the mobile.scss file
+ 
+// CUSTOMISATION - KUNE 
+
+#main-outlet-wrapper #main-outlet {
+ 
+  padding: 6px .5em 1em .5em !important;
+  border-radius: 10px;
+}
+
+.topic-avatar {
+  margin-left: 0px !important;
+}
+
+#main-outlet-wrapper {
+  padding-top: 3px !important;
+}
+
+.d-header .panel {
+  margin-right: 5px !important;  // move native Discourse menu to the right on mobile 
+}
+
+.mobile-view .above-main-container-outlet.search-banner .custom-search-banner-wrap {
+  padding-bottom: 10px !important;
+}
+
+
+// MOVE MENU TO BOTTOM OF SCREEN
+
+.after-header-panel-outlet {    
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-top: 1px solid #3877e5;  // UI blue
+}
+
+#rdiv-after-header-panel {
+  margin-left: 0px !important;
+  padding-left: 20px !important;
+  background-color: white !important;
+
+}
+
+.powered-by-discourse {
+  display: none !important;
+}
+
+// reduce font size of "category / latest / new" selector 
+.list-controls .nav-pills .list-control-toggle-link-trigger {
+  font-size: var(--font-down-2-rem) !important;
+  padding-top: 10px !important;
+}
+
+// reduce category, tag and nav button sizes 
+
+.category-breadcrumb>li {
+  height: 32px !important;
+}
+
+.navigation-controls>* {
+  height: 28px;
+}
+
+.d-button-label {
+  font-size: var(--font-down-2-rem) !important;
+}
+
+.select-kit.combo-box.category-drop .category-drop-header {
+  font-size: var(--font-down-2-rem) !important;
+}
+
+// reduce category and tag sizes 
+.select-kit.combo-box.category-drop .badge-category__wrapper{
+  font-size: var(--font-down-2-rem) !important;
+}
+
+.select-kit.combo-box.tag-drop .tag-drop-header {
+  font-size: var(--font-down-2-rem) !important;
+}
+
+
+} // end of mobile media query
+
+
 .category_breadcrumb {
     display: flex !important; // ensure it's visible in mobile (override "hidden") 
 }
