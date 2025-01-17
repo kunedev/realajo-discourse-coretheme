@@ -3,6 +3,12 @@
 
 // CUSTOMISATION - KUNE 
 
+#main-outlet-wrapper #main-outlet {
+  padding-top: 1em !important;
+  border-radius: 10px;
+}
+
+
 .d-header .panel {
   margin-right: 5px !important;  // move native Discourse menu to the right on mobile 
 }
@@ -50,6 +56,10 @@
 }
 
 .d-button-label {
+  font-size: var(--font-down-2-rem) !important;
+}
+
+.select-kit.combo-box.category-drop .category-drop-header {
   font-size: var(--font-down-2-rem) !important;
 }
 
