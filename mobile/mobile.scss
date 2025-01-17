@@ -23,12 +23,13 @@
 
 // MOVE MENU TO BOTTOM OF SCREEN
 
-.after-header-panel-outlet {    // to be improved 
+.after-header-panel-outlet {    
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+  border-top: 1px solid #3877e5;  // UI blue
 }
 
 #rdiv-after-header-panel {
