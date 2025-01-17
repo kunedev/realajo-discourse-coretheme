@@ -123,9 +123,13 @@ body.has-sidebar-page #main-outlet-wrapper {
   display: none !important;
 }
 
-#rdiv-after-header-panel {
-  margin-left: -470px !important;
+
+@media (min-width: 768px)   {
+  #rdiv-after-header-panel {
+    margin-left: -470px !important;
+  }
 }
+
 
 .chat-header-icon {
   display: none !important;
