@@ -4,10 +4,13 @@
 // CUSTOMISATION - KUNE 
 
 #main-outlet-wrapper #main-outlet {
-  padding-top: 1em !important;
+  padding-top: 6px !important;
   border-radius: 10px;
 }
 
+#main-outlet-wrapper {
+  padding-top: 3px !important;
+}
 
 .d-header .panel {
   margin-right: 5px !important;  // move native Discourse menu to the right on mobile 
