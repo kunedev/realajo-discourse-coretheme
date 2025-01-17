@@ -3,11 +3,31 @@
 
 // CUSTOMISATION - KUNE 
 
+// reduce font size of "category / latest / new" selector 
 .list-controls .nav-pills .list-control-toggle-link-trigger {
   font-size: var(--font-down-1-rem) !important;
-  padding-top: 10px !important;
+  padding-top: 6px !important;
 }
 
+// reduce category, tag and nav button sizes 
+
+.category-breadcrumb>li> {
+  height: 32px !important;
+}
+
+.navigation-controls>* {
+  height: 28px;
+}
+
+
+// reduce category and tag sizes 
+.select-kit.combo-box.category-drop .badge-category__wrapper {
+  font-size: var(--font-down-1-rem) !important;
+}
+
+.select-kit.combo-box.tag-drop .tag-drop-header {
+  font-size: var(--font-down-2-rem) !important;
+}
 
 // ORIGINAL: 
 
