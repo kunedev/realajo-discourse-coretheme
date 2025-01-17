@@ -62,6 +62,7 @@ body.category .navigation-categories .list-container,
 
 ol.category-breadcrumb {
   margin-top: 1em;
+  display: flex !important;  // override "hidden" class
 }
 
 .categories-list .list-controls {
