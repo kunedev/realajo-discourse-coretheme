@@ -7,6 +7,10 @@
   margin-right: 5px !important;  // move native Discourse menu to the right on mobile 
 }
 
+.category-list.with-topics {
+  display: none !important;  // hide native category list on mobile  (it is replaced by blocks) 
+}
+
 // MOVE MENU TO BOTTOM OF SCREEN
 
 .after-header-panel-outlet {
