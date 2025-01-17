@@ -124,10 +124,16 @@ body.has-sidebar-page #main-outlet-wrapper {
 }
 
 
-@media (min-width: 768px)   {
+@media (min-width: 768px)   { // adjustments to menus for desktop
+
   #rdiv-after-header-panel {
     margin-left: -470px !important;
   }
+
+  .d-header .panel {
+    margin-right: 40px !important;
+  }
+  
 }
 
 
@@ -144,9 +150,6 @@ body.has-sidebar-page #main-outlet-wrapper {
   visibility: hidden !important;
 }
 
-.d-header .panel {
-  margin-right: 40px !important;
-}
 
 .header-sidebar-toggle {
   display: none !important;
