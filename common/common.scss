@@ -1,5 +1,10 @@
 
 
+.category_breadcrumb {
+    display: flex !important; // ensure it's visible in mobile (override "hidden") 
+}
+
+
 // MAJOR UI RESTRUCTURE 
 
 
@@ -600,7 +605,7 @@ html body #main-outlet {
 
 // ==============   Next: Dynamic resizing of the main content area based on the state of the qleftdrawer and qrightdrawer  ==============  
 
-// Note, under 1054 px, the Quasr framework presents the sidebars as Overlays - no need to resize the main content area.
+// Note, under 1054 px, the Quasar framework presents the sidebars as Overlays - no need to resize the main content area.
 @media screen and (min-width: 1054px) {
 
     #main.qleftdrawer-open.qrightdrawer-open {
