@@ -1,5 +1,17 @@
 @import "chat-mobile";
 
+
+// CUSTOMISATION - KUNE 
+
+.list-controls .nav-pills .list-control-toggle-link-trigger {
+  font-size: var(--font-down-1-rem) !important;
+ 
+}
+
+
+// ORIGINAL: 
+
+
 .custom-search-banner-wrap {
   h1 {
     font-size: 2.5em !important;
