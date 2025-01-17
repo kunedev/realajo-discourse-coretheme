@@ -3,6 +3,15 @@
 
 // CUSTOMISATION - KUNE 
 
+
+
+.after-header-panel-outlet {    // VERY BAD, VERY TEMPORARY HACK TO MOVE IT FROM OBSCURING THE LOGO
+  position: relative;
+  top: 800px;
+  left: 100px;
+}
+
+
 // reduce font size of "category / latest / new" selector 
 .list-controls .nav-pills .list-control-toggle-link-trigger {
   font-size: var(--font-down-1-rem) !important;
