@@ -13,7 +13,7 @@
 
 // MOVE MENU TO BOTTOM OF SCREEN
 
-.after-header-panel-outlet {
+.after-header-panel-outlet {    // to be improved 
   position: fixed;
   bottom: 0;
   left: 0;
@@ -22,7 +22,10 @@
 }
 
 #rdiv-after-header-panel {
-  margin-left: 20px !important;
+  margin-left: 0px !important;
+  padding-left: 20px !important;
+  background-color: white !important;
+
 }
 
 .powered-by-discourse {
