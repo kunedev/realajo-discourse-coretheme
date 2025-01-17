@@ -3,14 +3,27 @@
 
 // CUSTOMISATION - KUNE 
 
-
-
-.after-header-panel-outlet {    // VERY BAD, VERY TEMPORARY HACK TO MOVE IT FROM OBSCURING THE LOGO
-  position: relative;
-  top: 800px;
-  left: 100px;
+.d-header .panel {
+  margin-right: 5px !important;  // move native Discourse menu to the right on mobile 
 }
 
+// MOVE MENU TO BOTTOM OF SCREEN
+
+.after-header-panel-outlet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#rdiv-after-header-panel {
+  margin-left: 20px !important;
+}
+
+.powered-by-discourse {
+  display: none !important;
+}
 
 // reduce font size of "category / latest / new" selector 
 .list-controls .nav-pills .list-control-toggle-link-trigger {
