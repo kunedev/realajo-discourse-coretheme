@@ -4,6 +4,9 @@
     display: flex !important; // ensure it's visible in mobile (override "hidden") 
 }
 
+.category-list.with-topics {
+  display: none !important;  // hide native category list on mobile  (it is replaced by blocks) 
+}
 
 // MAJOR UI RESTRUCTURE 
 
