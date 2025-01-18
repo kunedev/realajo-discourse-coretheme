@@ -1,12 +1,19 @@
 
 
+// TOC STYLES
+.d-toc-main {
+  max-width: 20em !important;
+  padding-right: 5px !important;
+}
+
+.d-toc-main #d-toc li.d-toc-item {
+  line-height: var(--line-height-medium) !important;
+
+}
+
 // =======================
 // THIS CODE SETS UP THE BEHAVIOUR OF MAIN CONTENT AREA AND SIDEPANELS.  
 // VUE CODE UPDATES THE ROOT VARIABLES AS NEEDED TO ADJUST POSITIONING  OF MAIN CONTENT 
-
-
-
-/* layout-core.css - Add to Discourse common.scss */
 
 :root {
   /* Core layout variables - defaults */
@@ -132,10 +139,9 @@
 // =======================
 
 
-
-
-
-
+.powered-by-discourse {
+  display: none !important;
+}
 
 
 @media (max-width: 768px) { // mobile responsive .. hopefully overriding the mobile.scss file
@@ -183,9 +189,7 @@
 
   }
 
-  .powered-by-discourse {
-    display: none !important;
-  }
+
 
   // reduce font size of "category / latest / new" selector 
   .list-controls .nav-pills .list-control-toggle-link-trigger {
@@ -1188,7 +1192,7 @@ html body #main-outlet {
   .archetype-regular & {
     min-height: 500px;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     padding: 1.5em;
     margin-top: 0;
     background: var(--secondary) !important;
