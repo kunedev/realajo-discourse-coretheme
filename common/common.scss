@@ -54,7 +54,7 @@
   
   #main-outlet-wrapper {
     --available-width: calc(100vw - var(--fixed-sidebar-width-left) - var(--fixed-sidebar-width-right) - var(--main-content-padding-factor));
-    --content-width: min(1200px, var(--available-width));
+    --content-width: min(var(--main-content-max-width), var(--available-width));
     --remaining-space: calc(var(--available-width) - var(--content-width));
     
     max-width: var(--content-width) !important;
