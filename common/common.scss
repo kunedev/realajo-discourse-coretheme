@@ -15,6 +15,7 @@
   --main-content-left: 0px;
   --main-content-max-width: 1200px;
   --main-content-shrink-by: 0px;
+  --main-content-padding-factor: 19px
   
   /* Sidebar dimensions when in overlay mode */
   --overlay-sidebar-width: 300px;
@@ -52,7 +53,7 @@
   }
   
   #main-outlet-wrapper {
-    --available-width: calc(100vw - var(--fixed-sidebar-width-left) - var(--fixed-sidebar-width-right));
+    --available-width: calc(100vw - var(--fixed-sidebar-width-left) - var(--fixed-sidebar-width-right) - var(--main-content-padding-factor));
     --content-width: min(1200px, var(--available-width));
     --remaining-space: calc(var(--available-width) - var(--content-width));
     
@@ -70,7 +71,7 @@
   }
   
   #main-outlet-wrapper {
-    --available-width: calc(100vw - var(--fixed-sidebar-width-left) - var(--fixed-sidebar-width-right));
+    --available-width: calc(100vw - var(--fixed-sidebar-width-left) - var(--fixed-sidebar-width-right) - var(--main-content-padding-factor) );
     --content-width: min(1200px, var(--available-width));
     --remaining-space: calc(var(--available-width) - var(--content-width));
     
