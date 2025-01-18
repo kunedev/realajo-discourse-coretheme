@@ -1,5 +1,141 @@
 
 
+// =======================
+// THIS CODE SETS UP THE BEHAVIOUR OF MAIN CONTENT AREA AND SIDEPANELS.  
+// VUE CODE UPDATES THE ROOT VARIABLES AS NEEDED TO ADJUST POSITIONING  OF MAIN CONTENT 
+
+
+
+/* layout-core.css - Add to Discourse common.scss */
+
+:root {
+  /* Core layout variables - defaults */
+  --fixed-sidebar-width-left: 0px;
+  --fixed-sidebar-width-right: 0px;
+  --main-content-left: 0px;
+  --main-content-max-width: 1200px;
+  --main-content-shrink-by: 0px;
+  
+  /* Sidebar dimensions when in overlay mode */
+  --overlay-sidebar-width: 300px;
+  
+  /* Z-index management */
+  --z-sidebar-overlay: 1000;
+  --z-sidebar-backdrop: 999;
+  
+  /* Animation */
+  --transition-speed: 0.3s;
+}
+
+/* Breakpoint definitions */
+@media (max-width: 1000px) {
+  /* Narrowscreen: Always overlay mode */
+  .sidebar {
+    position: fixed;
+    width: var(--overlay-sidebar-width) !important;
+    z-index: var(--z-sidebar-overlay);
+  }
+  
+  #main-outlet-wrapper {
+    --main-content-left: 0px;
+    margin-left: var(--main-content-left) !important  ;
+    max-width: min(100vw, var(--main-content-max-width)) !important;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  /* Midscreen: One sidebar at a time, push content */
+  .sidebar {
+    position: fixed;
+    transition: transform var(--transition-speed);
+  }
+  
+  #main-outlet-wrapper {
+    --available-width: calc(100vw - var(--fixed-sidebar-width-left) - var(--fixed-sidebar-width-right));
+    --content-width: min(1200px, var(--available-width));
+    --remaining-space: calc(var(--available-width) - var(--content-width));
+    
+    max-width: var(--content-width) !important;
+    margin-left: calc(var(--fixed-sidebar-width-left) + (var(--remaining-space) / 2)) !important  ;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1501px) {
+  /* Widescreen: Can show both sidebars */
+  .sidebar {
+    position: fixed;
+    transition: transform var(--transition-speed);
+  }
+  
+  #main-outlet-wrapper {
+    --available-width: calc(100vw - var(--fixed-sidebar-width-left) - var(--fixed-sidebar-width-right));
+    --content-width: min(1200px, var(--available-width));
+    --remaining-space: calc(var(--available-width) - var(--content-width));
+    
+    max-width: var(--content-width) !important;
+    margin-left: calc(var(--fixed-sidebar-width-left) + (var(--remaining-space) / 2)) !important;
+    width: 100% !important;
+  }
+}
+
+/* Sidebar positioning */
+.sidebar-left {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.sidebar-right {
+  right: 0;
+  transform: translateX(100%);
+}
+
+/* Overlay mode styles */
+.sidebar.overlay-mode {
+  width: var(--overlay-sidebar-width) !important;
+  z-index: var(--z-sidebar-overlay);
+}
+
+.sidebar.overlay-mode::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: var(--z-sidebar-backdrop);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-speed);
+}
+
+.sidebar.overlay-mode.open::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Open state */
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* Base transitions */
+.sidebar,
+#main-outlet-wrapper {
+  transition: all var(--transition-speed);
+}
+
+
+// =======================
+
+
+
+
+
+
+
 
 @media (max-width: 768px) { // mobile responsive .. hopefully overriding the mobile.scss file
 
