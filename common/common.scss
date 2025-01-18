@@ -11,6 +11,11 @@
 
 }
 
+// fix to row containing post avatar
+.onscreen-post .row {
+  flex-wrap: nowrap !important;   
+}
+
 // =======================
 // THIS CODE SETS UP THE BEHAVIOUR OF MAIN CONTENT AREA AND SIDEPANELS.  
 // VUE CODE UPDATES THE ROOT VARIABLES AS NEEDED TO ADJUST POSITIONING  OF MAIN CONTENT 
@@ -783,7 +788,7 @@ html body #main-outlet {
 }
 
 #topic-title {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   margin-top: 15px;
 }
 
