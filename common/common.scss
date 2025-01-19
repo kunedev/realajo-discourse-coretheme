@@ -6,10 +6,15 @@
     margin-left: -40px;
 }
 
+  .post-avatar {
+    margin-top: -9px;
+  }
+}
 .post-avatar {
   margin-top: -3px;
 }
-}
+  
+
 
   // TOC STYLES
   .d-toc-main {
@@ -830,7 +835,10 @@ html body #main-outlet {
   max-height: 32px !important;
 }
 
-
+img.avatar {
+  max-width: 32px !important;
+  max-height: 32px !important;
+}
 
 .q-drawer--right.q-drawer--bordered {   // remove fine white line; prevent movement to bottom
   border: none !important;
