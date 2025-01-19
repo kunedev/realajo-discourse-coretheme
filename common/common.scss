@@ -1,12 +1,5 @@
 
-
-@media (max-width: 768px) {
  
-  .post-avatar {
-    margin-top: -9px;
-  }
-}
-
   
 
 
@@ -822,6 +815,7 @@ html body #main-outlet {
   max-width: 32px !important;
   max-height: 32px !important;
   margin-left: -37px;    //  not !important because mobile-responsive must override it with !important
+  margin-top: -5px;
 }
 
 .topic-avatar .avatar {
