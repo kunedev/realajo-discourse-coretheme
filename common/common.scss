@@ -110,12 +110,14 @@ nav.post-controls .show-replies[aria-expanded=true] {
     z-index: var(--z-sidebar-overlay);
   }
   
-  #main-outlet-wrapper {
+  #main-outlet-wrapper, #reply-control {
     --main-content-left: 0px;
     margin-left: var(--main-content-left) !important  ;
     max-width: min(100vw, var(--main-content-max-width)) !important;
     width: 100% !important;
   }
+
+
 }
 
 @media (min-width: 1001px) and (max-width: 1500px) {
@@ -125,15 +127,15 @@ nav.post-controls .show-replies[aria-expanded=true] {
     transition: transform var(--transition-speed);
   }
   
-  #main-outlet-wrapper {
+  #main-outlet-wrapper, #reply-control {
     --available-width: calc(100vw - var(--fixed-sidebar-width-left) - var(--fixed-sidebar-width-right) - var(--main-content-padding-factor));
     --content-width: min(var(--main-content-max-width), var(--available-width));
     --remaining-space: calc(var(--available-width) - var(--content-width));
-    
     max-width: var(--content-width) !important;
     margin-left: calc(var(--fixed-sidebar-width-left) + (var(--remaining-space) / 2)) !important  ;
     width: 100% !important;
   }
+
 }
 
 @media (min-width: 1501px) {
@@ -143,7 +145,7 @@ nav.post-controls .show-replies[aria-expanded=true] {
     transition: transform var(--transition-speed);
   }
   
-  #main-outlet-wrapper {
+  #main-outlet-wrapper, #reply-control {
     --available-width: calc(100vw - var(--fixed-sidebar-width-left) - var(--fixed-sidebar-width-right) - var(--main-content-padding-factor) );
     --content-width: min(1200px, var(--available-width));
     --remaining-space: calc(var(--available-width) - var(--content-width));
