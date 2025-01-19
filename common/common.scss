@@ -811,7 +811,7 @@ html body #main-outlet {
   padding-top: 0px !important ;
   max-width: 32px !important;
   max-height: 32px !important;
-  margin-left: -37px !important;
+  margin-left: -37px;    //  not !important because mobile-responsive must override it with !important
 }
 
 .topic-avatar .avatar {
