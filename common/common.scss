@@ -792,15 +792,15 @@ html body #main-outlet {
   margin-top: 15px;
 }
 
+.topic-body {
+  margin-top: -5px !important;
+  margin-left: 2px !important;
+}
 
 .d-header .categories-wrapper { // shows when the topic is scrolled down 
 
     margin-top: -18px;
 
-}
-
-.topic-meta-data {
- margin-left: 0px; 
 
 }
 
@@ -811,7 +811,7 @@ html body #main-outlet {
   padding-top: 0px !important ;
   max-width: 32px !important;
   max-height: 32px !important;
-  margin-left: -37px;    //  not !important because mobile-responsive must override it with !important
+  margin-left: -37px !important;
 }
 
 .topic-avatar .avatar {
