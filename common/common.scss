@@ -1,6 +1,24 @@
 
  
-  
+
+// structure post replies & indents 
+
+.embedded-posts.bottom {
+  left: 35px  !important;
+}
+
+.embedded-posts.bottom>div .row:before {
+    left: -12px !important;
+}
+	
+.embedded-posts.bottom>div:last-of-type .row:before {
+    left: -12px !important;
+}
+
+.embedded-posts.bottom .collapse-up {
+	left: -12px !important; 
+}
+
 
 
   // TOC STYLES
