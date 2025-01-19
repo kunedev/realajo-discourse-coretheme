@@ -3,6 +3,10 @@
 
   // ------------------------ structure post replies & indents 
 
+article#post_1 {
+  border-top: solid 1px lightgray;
+}
+
 .embedded-posts.bottom {
   left: 35px  !important;
 }
