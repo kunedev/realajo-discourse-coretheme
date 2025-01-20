@@ -17,13 +17,13 @@
 
   // ------------------------ structure post replies & indents 
 
-  nav.post-controls .actions button {
-    font-size: unset !important;
-  }
+nav.post-controls .actions button {
+  font-size: unset !important;
+}
 
-  article#post_1 {
-    border-top: solid 1px lightgray;
-  }
+article#post_1 {
+  border-top: solid 1px lightgray;
+}
 
 .embedded-posts.bottom {
   left: 35px  !important;
@@ -39,6 +39,17 @@
 
 .embedded-posts.bottom .collapse-up {
 	left: -12px !important; 
+}
+
+@media (max-width: 768px) {	
+  .embedded-posts>div .topic-body {
+    margin-left: unset !important;
+  }
+  
+  .embedded-posts.bottom {
+    left: 14px !important;
+  margin-right: 10px;
+  }
 }
 
 
