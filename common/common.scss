@@ -52,10 +52,13 @@ article#post_1 {
   }
 
   .embedded-posts>div .topic-avatar{
-    margin-right: 7px;
     margin-left: -5px !important;
   }
 
+}
+
+.embedded-posts>div .topic-avatar{
+  margin-right: 5px;
 }
 
 
